@@ -27,13 +27,13 @@ exports.login = async (req, res) => {
         console.log(result);
         if (result.length <= 0) {
           return res.status(401).render("login", {
-            msg: "Please Enter Your Email and Password",
+            msg: "Please Enter Your Email",
             msg_type: "error",
           });
         } else {
           if (!(await bcrypt.compare(password, result[0].PASS))) {
             return res.status(401).render("login", {
-              msg: "Please Enter Your Email and Password",
+              msg: "Wrong Password",
               msg_type: "error",
             });
           } else {
