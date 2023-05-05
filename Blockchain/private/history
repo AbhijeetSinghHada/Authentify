@@ -1,0 +1,7 @@
+var var bytecode = "0x" + fs.readFileSync("/path/to/build/ProductRegistry.bin").toString()
+var abi = JSON.parse(fs.readFileSync("/path/to/build/ProductRegistry.abi"))
+var bytecode = "0x" + fs.readFileSync("/path/to/build/ProductRegistry.bin").toString()
+var abi = JSON.parse(fs.readFileSync("/path/to/build/ProductRegistry.abi"))
+var bytecode = "0x" + fs.readFileSync("./build/ProductRegistry.bin").toString()
+var bytecode = fs.readFileSync("./build/ProductRegistry.bin").toString()
+y
